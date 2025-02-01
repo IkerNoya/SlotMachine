@@ -12,3 +12,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff274f80caa6ebc428eae4c211148372, type: 3}
   m_Name: IconValues
   m_EditorClassIdentifier: 
+  IconsData:
+  - Icon: {fileID: -855298285791758126, guid: d4bce14a87337e641aec0da55558c764, type: 3}
+    ScorePerIcons:
+    - IconsMatched: 2
+      Score: 25
+    - IconsMatched: 3
+      Score: 50
+    - IconsMatched: 4
+      Score: 75
+    - IconsMatched: 5
+      Score: 100
+  - Icon: {fileID: 6937817954938267909, guid: bace8f1b222e90142b0706e0dd17b925, type: 3}
+    ScorePerIcons:
+    - IconsMatched: 2
+      Score: 10
+    - IconsMatched: 3
+      Score: 20
+    - IconsMatched: 4
+      Score: 30
+    - IconsMatched: 5
+      Score: 60
+  - Icon: {fileID: -6470460504253458178, guid: ddc9f36d1feee0d43bada788ee39040f, type: 3}
+    ScorePerIcons:
+    - IconsMatched: 2
+      Score: 5
+    - IconsMatched: 3
+      Score: 10
+    - IconsMatched: 4
+      Score: 20
+    - IconsMatched: 5
+      Score: 50
+  - Icon: {fileID: -4178046375966092550, guid: 9efa1747495583444ad41137e929d0b2, type: 3}
+    ScorePerIcons:
+    - IconsMatched: 2
+      Score: 5
+    - IconsMatched: 3
+      Score: 10
+    - IconsMatched: 4
+      Score: 20
+    - IconsMatched: 5
+      Score: 40
+  - Icon: {fileID: 4130640169021434097, guid: c0e4b5cd1ba5a1f47b2f10e5510703b4, type: 3}
+    ScorePerIcons:
+    - IconsMatched: 2
+      Score: 5
+    - IconsMatched: 3
+      Score: 10
+    - IconsMatched: 4
+      Score: 15
+    - IconsMatched: 5
+      Score: 30
+  - Icon: {fileID: 3465286685962602723, guid: 903bd39e96227ff428f0162f76b8f0f3, type: 3}
+    ScorePerIcons:
+    - IconsMatched: 2
+      Score: 2
+    - IconsMatched: 3
+      Score: 5
+    - IconsMatched: 4
+      Score: 10
+    - IconsMatched: 5
+      Score: 20
+  - Icon: {fileID: 7028616704906629411, guid: f3043d3a4f702c6409eeb2ba70501362, type: 3}
+    ScorePerIcons:
+    - IconsMatched: 2
+      Score: 1
+    - IconsMatched: 3
+      Score: 2
+    - IconsMatched: 4
+      Score: 5
+    - IconsMatched: 5
+      Score: 10

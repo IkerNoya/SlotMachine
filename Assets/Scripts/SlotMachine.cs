@@ -1,20 +1,17 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class SlotMachine : MonoBehaviour
 {
-    [SerializeField] private Button SpinButton;
-    
-    IEnumerator SpinDelay()
-    {
-        yield return new WaitForSeconds(3.0f);
-        SpinButton.interactable = true;
-    }
+    [SerializeField] private Vector2 spinTime;
+    [SerializeField] private Button spinButton;
 
-    public void OnSpin()
-    {
-        SpinButton.interactable = false;
-        StartCoroutine(SpinDelay());
-    }
+    public delegate void StartSpin();
+    public delegate void StopSpinning();
+    
+    
+    
 }

@@ -1,0 +1,1040 @@
+fileFormatVersion: 2
+guid: eb1c8acd7ba96724dbde62c2eb3585f7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3587606535333709454
+    second: SlotMachineAtlas_0
+  - first:
+      213: 725156536410959650
+    second: SlotMachineAtlas_1
+  - first:
+      213: -6507709146024089255
+    second: SlotMachineAtlas_2
+  - first:
+      213: -6288642031031901720
+    second: SlotMachineAtlas_3
+  - first:
+      213: 2965971426755616249
+    second: SlotMachineAtlas_4
+  - first:
+      213: -3687545314471806217
+    second: SlotMachineAtlas_5
+  - first:
+      213: 8248978640272547663
+    second: SlotMachineAtlas_6
+  - first:
+      213: -8878569396304673104
+    second: SlotMachineAtlas_7
+  - first:
+      213: -1973172683481429790
+    second: SlotMachineAtlas_8
+  - first:
+      213: 7761104630342077241
+    second: SlotMachineAtlas_9
+  - first:
+      213: -6135522805810885930
+    second: SlotMachineAtlas_10
+  - first:
+      213: 1852024764766416365
+    second: SlotMachineAtlas_11
+  - first:
+      213: 2991893900980431523
+    second: SlotMachineAtlas_12
+  - first:
+      213: 8683373324191482286
+    second: SlotMachineAtlas_13
+  - first:
+      213: 5282757356681073742
+    second: SlotMachineAtlas_14
+  - first:
+      213: 7860323541553861336
+    second: SlotMachineAtlas_15
+  - first:
+      213: -5886306032994156203
+    second: SlotMachineAtlas_16
+  - first:
+      213: -4467325644226929179
+    second: SlotMachineAtlas_17
+  - first:
+      213: -1706808172212225888
+    second: SlotMachineAtlas_18
+  - first:
+      213: -4197377270617820898
+    second: SlotMachineAtlas_19
+  - first:
+      213: -979385690603522836
+    second: SlotMachineAtlas_20
+  - first:
+      213: 9127896852244753713
+    second: SlotMachineAtlas_21
+  - first:
+      213: 1268182053247712473
+    second: SlotMachineAtlas_22
+  - first:
+      213: -8077503042899793128
+    second: SlotMachineAtlas_23
+  - first:
+      213: -4163296486734926588
+    second: SlotMachineAtlas_24
+  - first:
+      213: 4131428923820234104
+    second: SlotMachineAtlas_25
+  - first:
+      213: -7297312591255769960
+    second: SlotMachineAtlas_26
+  - first:
+      213: -2283206359939040794
+    second: SlotMachineAtlas_27
+  - first:
+      213: 7407657486829934779
+    second: SlotMachineAtlas_28
+  - first:
+      213: -4499552612521531451
+    second: SlotMachineAtlas_29
+  - first:
+      213: -8371339097067492724
+    second: SlotMachineAtlas_30
+  - first:
+      213: 8278000624039317745
+    second: SlotMachineAtlas_31
+  - first:
+      213: -5601282781364292420
+    second: SlotMachineAtlas_32
+  - first:
+      213: 3971189527766073559
+    second: SlotMachineAtlas_33
+  - first:
+      213: -573609318724847228
+    second: SlotMachineAtlas_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 0
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SlotMachineAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1411
+        width: 141
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27970933dd2463ec0800000000000000
+      internalID: -3587606535333709454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1419
+        width: 153
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22fe35f1706401a00800000000000000
+      internalID: 725156536410959650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1411
+        width: 154
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9596ca1d209ffa5a0800000000000000
+      internalID: -6507709146024089255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1413
+        width: 154
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1a0c434614ab8a0800000000000000
+      internalID: -6288642031031901720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 1411
+        width: 154
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd1ab95c4f392920800000000000000
+      internalID: 2965971426755616249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1181
+        width: 138
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa70cde21533dcc0800000000000000
+      internalID: -3687545314471806217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_6
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1182
+        width: 143
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4fda3d4e524a7270800000000000000
+      internalID: 8248978640272547663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_7
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1191
+        width: 153
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b60b9bbc2cf8c480800000000000000
+      internalID: -8878569396304673104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1191
+        width: 148
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8c59016e1ed94e0800000000000000
+      internalID: -1973172683481429790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_9
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 1182
+        width: 143
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93bcd2c8a8bf4bb60800000000000000
+      internalID: 7761104630342077241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_10
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 963
+        width: 153
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da8558f38e3adaa0800000000000000
+      internalID: -6135522805810885930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_11
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 947
+        width: 138
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dede02b06b6b3b910800000000000000
+      internalID: 1852024764766416365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_12
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 963
+        width: 148
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aaa895b6a7558920800000000000000
+      internalID: 2991893900980431523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_13
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 962
+        width: 148
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea14988280a818870800000000000000
+      internalID: 8683373324191482286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_14
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 946
+        width: 138
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e449e8f93df105940800000000000000
+      internalID: 5282757356681073742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_15
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 730
+        width: 143
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d255f18d9a751d60800000000000000
+      internalID: 7860323541553861336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_16
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 731
+        width: 148
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551052899d3af4ea0800000000000000
+      internalID: -5886306032994156203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_17
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 731
+        width: 154
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed5cd7defed002c0800000000000000
+      internalID: -4467325644226929179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_18
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 732
+        width: 154
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a87e8ba2033058e0800000000000000
+      internalID: -1706808172212225888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_19
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 729
+        width: 153
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11b68c6c9befb5c0800000000000000
+      internalID: -4197377270617820898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_20
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 505
+        width: 148
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4f97547e58862f0800000000000000
+      internalID: -979385690603522836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_21
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 496
+        width: 143
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d647053ddccae70800000000000000
+      internalID: 9127896852244753713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_22
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 493
+        width: 138
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dcfa5abbdc799110800000000000000
+      internalID: 1268182053247712473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_23
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 499
+        width: 154
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b22d767c1f6ef80800000000000000
+      internalID: -8077503042899793128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_24
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 498
+        width: 141
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d688547eff836c0800000000000000
+      internalID: -4163296486734926588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_25
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 262
+        width: 154
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 875541b87b8c55930800000000000000
+      internalID: 4131428923820234104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_26
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 262
+        width: 154
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ce63f6cdcbaba90800000000000000
+      internalID: -7297312591255769960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_27
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 260
+        width: 154
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9bbee99eb6050e0800000000000000
+      internalID: -2283206359939040794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_28
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 266
+        width: 141
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8d240ac394dc660800000000000000
+      internalID: 7407657486829934779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_29
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 266
+        width: 141
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c729721db06e81c0800000000000000
+      internalID: -4499552612521531451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_30
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 31
+        width: 154
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ae3f8c17703db80800000000000000
+      internalID: -8371339097067492724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_31
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 35
+        width: 141
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0535675bd51e270800000000000000
+      internalID: 8278000624039317745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_32
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 29
+        width: 143
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4f44abcfe3442b0800000000000000
+      internalID: -5601282781364292420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_33
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 37
+        width: 153
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d08f32d5df7c1730800000000000000
+      internalID: 3971189527766073559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlotMachineAtlas_34
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 29
+        width: 154
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4893d8d1d512a08f0800000000000000
+      internalID: -573609318724847228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SlotMachineAtlas_0: -3587606535333709454
+      SlotMachineAtlas_1: 725156536410959650
+      SlotMachineAtlas_10: -6135522805810885930
+      SlotMachineAtlas_11: 1852024764766416365
+      SlotMachineAtlas_12: 2991893900980431523
+      SlotMachineAtlas_13: 8683373324191482286
+      SlotMachineAtlas_14: 5282757356681073742
+      SlotMachineAtlas_15: 7860323541553861336
+      SlotMachineAtlas_16: -5886306032994156203
+      SlotMachineAtlas_17: -4467325644226929179
+      SlotMachineAtlas_18: -1706808172212225888
+      SlotMachineAtlas_19: -4197377270617820898
+      SlotMachineAtlas_2: -6507709146024089255
+      SlotMachineAtlas_20: -979385690603522836
+      SlotMachineAtlas_21: 9127896852244753713
+      SlotMachineAtlas_22: 1268182053247712473
+      SlotMachineAtlas_23: -8077503042899793128
+      SlotMachineAtlas_24: -4163296486734926588
+      SlotMachineAtlas_25: 4131428923820234104
+      SlotMachineAtlas_26: -7297312591255769960
+      SlotMachineAtlas_27: -2283206359939040794
+      SlotMachineAtlas_28: 7407657486829934779
+      SlotMachineAtlas_29: -4499552612521531451
+      SlotMachineAtlas_3: -6288642031031901720
+      SlotMachineAtlas_30: -8371339097067492724
+      SlotMachineAtlas_31: 8278000624039317745
+      SlotMachineAtlas_32: -5601282781364292420
+      SlotMachineAtlas_33: 3971189527766073559
+      SlotMachineAtlas_34: -573609318724847228
+      SlotMachineAtlas_4: 2965971426755616249
+      SlotMachineAtlas_5: -3687545314471806217
+      SlotMachineAtlas_6: 8248978640272547663
+      SlotMachineAtlas_7: -8878569396304673104
+      SlotMachineAtlas_8: -1973172683481429790
+      SlotMachineAtlas_9: 7761104630342077241
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
