@@ -28,8 +28,8 @@ public struct SlotIcon
    }
 }
 
-[CreateAssetMenu(fileName = "IconValues", menuName = "Scriptable Objects/Icons")]
-public class IconValues : ScriptableObject
+[CreateAssetMenu(fileName = "ScoreValues", menuName = "Scriptable Objects/Score")]
+public class ScoreValues : ScriptableObject
 {
    public List<SlotIcon> IconsData;
 

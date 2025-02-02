@@ -5,6 +5,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
+public struct SlotsMatched
+{
+    public SpriteRenderer slot;
+    public int matches;
+}
 
 public class GameManager : MonoBehaviour
 {
@@ -13,7 +18,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float maxSpinTime = 4f;
     [SerializeField] private Button spinButton;
     [SerializeField] private List<SlotColumn> slots;
+    [SerializeField] private ScoreValues scoreValues;
+    
+    private List<SlotsMatched> _slotsMatched;
     private Slot[,] winningSlots;
+    
+    public float Score { get; private set; }
 
     private int stoppedColumns = 0;
     public static GameManager Instance { get; private set; }
@@ -36,6 +46,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         winningSlots = new Slot[5, 3];
+        _slotsMatched = new List<SlotsMatched>();
         foreach (SlotColumn slot in slots)
         {
             slot.SpinEnded += SlotColumnStopped;
@@ -65,18 +76,67 @@ public class GameManager : MonoBehaviour
         {
             stoppedColumns = 0;
             CheckWinners();
+            SetNewScore();
             SlotMachineStopped?.Invoke();
             spinButton.interactable = true;
         }
     }
 
+    void SetNewScore()
+    {
+        if (_slotsMatched.Count <= 0)  return;
+        
+        foreach (SlotsMatched winners in _slotsMatched)
+        {
+            Score += scoreValues.GetScore(winners.slot.sprite, winners.matches);
+        }
+    }
+
     void CheckWinners()
     {
-        //TODO Check winners using grid
+        for (int y = 0; y < winningSlots.GetLength(1); y++)
+        {
+            List<Slot> Row = new List<Slot>();
+            for (int x = 0; x < winningSlots.GetLength(0); x++)
+            {
+                bool isIndexValid = x + 1 < winningSlots.GetLength(0);
+                if (!isIndexValid)
+                {
+                    Row.Add(winningSlots[x, y]);
+                    break;
+                }
+
+                Slot slot = winningSlots[x, y];
+                Row.Add(slot);
+                
+                SpriteRenderer slotSprite = slot.GetComponent<SpriteRenderer>();
+                SpriteRenderer nextSlotSprite = winningSlots[x + 1, y].GetComponent<SpriteRenderer>();
+                //TODO animation or particle if they are the same
+                if (slotSprite.sprite != nextSlotSprite.sprite) break;
+            }
+
+            if (Row.Count > 1)
+            {
+                SlotsMatched slotsMatched;
+                slotsMatched.matches = Row.Count;
+                slotsMatched.slot = Row[0].GetComponent<SpriteRenderer>();
+                _slotsMatched.Add(slotsMatched);
+            }
+        }
     }
     
     public void OnSpin()
     {
+        ResetValues();
+        spinButton.interactable = false;
+        SlotMachineStarted?.Invoke();
+        StartCoroutine(SpinDelay());
+    }
+
+    void ResetValues()
+    {
+        Score = 0;
+        _slotsMatched.Clear();
         for (int x = 0; x < winningSlots.GetLength(0); x++)
         {
             for (int y = 0; y < winningSlots.GetLength(1); y++)
@@ -84,9 +144,6 @@ public class GameManager : MonoBehaviour
                 winningSlots[x, y] = null;
             }
         }
-        spinButton.interactable = false;
-        SlotMachineStarted?.Invoke();
-        StartCoroutine(SpinDelay());
     }
     
     IEnumerator SpinDelay()
