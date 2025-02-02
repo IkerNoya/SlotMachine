@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button spinButton;
     [SerializeField] private List<SlotColumn> slots;
     [SerializeField] private ScoreValues scoreValues;
+    [SerializeField] private string ActivateGlowPropertyName;
     
     private List<SlotsMatched> _slotsMatched;
     private Slot[,] winningSlots;
@@ -111,10 +112,12 @@ public class GameManager : MonoBehaviour
                 
                 SpriteRenderer slotSprite = slot.GetComponent<SpriteRenderer>();
                 SpriteRenderer nextSlotSprite = winningSlots[x + 1, y].GetComponent<SpriteRenderer>();
-                //TODO animation or particle if they are the same
+                if(slotSprite.sprite == nextSlotSprite.sprite || x >= 1)
+                    slotSprite.material.SetInt(ActivateGlowPropertyName, 1);    
+                
                 if (slotSprite.sprite != nextSlotSprite.sprite) break;
             }
-
+            
             if (Row.Count > 1)
             {
                 SlotsMatched slotsMatched;
@@ -141,6 +144,10 @@ public class GameManager : MonoBehaviour
         {
             for (int y = 0; y < winningSlots.GetLength(1); y++)
             {
+                if (winningSlots[x, y] != null)
+                {
+                    winningSlots[x,y].GetComponent<SpriteRenderer>().material.SetInt(ActivateGlowPropertyName, 0);
+                }
                 winningSlots[x, y] = null;
             }
         }
