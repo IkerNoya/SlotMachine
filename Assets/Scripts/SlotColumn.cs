@@ -9,15 +9,19 @@ public class SlotColumn : MonoBehaviour
 {
     //Spawns the sprites in the stored order
     [SerializeField] private List<Sprite> spritesToSpawn;
+    [SerializeField] private SlotGrid slotGrid;
     [SerializeField] private GameObject spritePrefab;
     [SerializeField] private float spawnOffsetY = 10.0f;
     [SerializeField] private float minSpinSpeed = 10.0f;
     [SerializeField] private float maxSpinSpeed = 10.0f;
+    
+    public List<Slot> WinningSlots { get; private set; }
+    
     public bool IsSpinning { get; private set; }
     public float Speed { get; private set; }
     
     public Action StartSpin;
-    public Action SpinEnded;
+    public Action<SlotColumn> SpinEnded;
     public Action TryStop;
 
     private List<GameObject> _createdSprites;
@@ -67,7 +71,8 @@ public class SlotColumn : MonoBehaviour
 
         if (allSlotsStopped)
         {
-            SpinEnded?.Invoke();
+            WinningSlots = slotGrid.GetWinningSlots();
+            SpinEnded?.Invoke(this);
         }
     }
 
@@ -81,7 +86,6 @@ public class SlotColumn : MonoBehaviour
     {
         float minDistance = 10000;
         Vector2 spawnerPos = transform.position;
-        float finalPosY = 0f;
         GameObject selectedObject = null;
         foreach (GameObject sprite in _createdSprites)
         {
@@ -100,15 +104,7 @@ public class SlotColumn : MonoBehaviour
         finalPos.y += spawnOffsetY;
         slot.transform.localPosition = finalPos;
     }
-
-    public void Rearrange(Vector2 direction, float distance)
-    {
-        foreach (GameObject sprite in _createdSprites)
-        {
-            sprite.GetComponent<Slot>().RearrangeStart(direction, distance);
-        }
-    }
-
+    
     private void OnDisable()
     {
         foreach (GameObject slot in _createdSprites)
@@ -117,13 +113,25 @@ public class SlotColumn : MonoBehaviour
         }
     }
 
+    private void StartStopProcess()
+    {
+        IsSpinning = false;
+        float distance = 0f;
+        Vector2 direction = Vector2.zero;
+        slotGrid.GetSlotRearrangementData(out direction, out distance);
+        foreach (GameObject sprite in _createdSprites)
+        {
+            sprite.GetComponent<Slot>().RearrangeStart(direction, distance);
+        }
+        TryStop?.Invoke();
+    }
+
     IEnumerator startSpin(float spinningTime)
     {
         StartSpin?.Invoke();
         IsSpinning = true;
         float selectedTime = spinningTime;
         yield return new WaitForSeconds(selectedTime);
-        IsSpinning = false;
-        TryStop?.Invoke();
+        StartStopProcess();
     }
 }

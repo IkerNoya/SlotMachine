@@ -13,13 +13,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float maxSpinTime = 4f;
     [SerializeField] private Button spinButton;
     [SerializeField] private List<SlotColumn> slots;
+    private Slot[,] winningSlots;
+
+    private int stoppedColumns = 0;
     public static GameManager Instance { get; private set; }
 
     public Action SlotMachineStarted;
     public Action SlotMachineStopped;
     
-    public float speed = 5f;
-
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -34,35 +35,55 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        winningSlots = new Slot[5, 3];
         foreach (SlotColumn slot in slots)
         {
             slot.SpinEnded += SlotColumnStopped;
         }
     }
 
-    void SlotColumnStopped()
+    void SlotColumnStopped(SlotColumn stoppedColumn)
     {
-        bool allColumnsSpinning = true;
-        foreach (SlotColumn slot in slots)
+        stoppedColumns++;
+        bool allColumnsStopped = stoppedColumns >= slots.Count;
+        int index = 0;
+        for (int i = 0; i < slots.Count; i++)
         {
-            if (slot.IsSpinning)
+            if (slots[i] == stoppedColumn)
             {
-                allColumnsSpinning = true;
-                break;
-            }
-
-            allColumnsSpinning = false;
+                index = i;
+            }            
         }
 
-        if (!allColumnsSpinning)
+        for (int y = 0; y < winningSlots.GetLength(1); y++)
         {
+            if (winningSlots[index, y] != null) return;
+            winningSlots[index, y] = stoppedColumn.WinningSlots[y];
+        }
+        
+        if (allColumnsStopped)
+        {
+            stoppedColumns = 0;
+            CheckWinners();
             SlotMachineStopped?.Invoke();
             spinButton.interactable = true;
         }
     }
 
+    void CheckWinners()
+    {
+        //TODO Check winners using grid
+    }
+    
     public void OnSpin()
     {
+        for (int x = 0; x < winningSlots.GetLength(0); x++)
+        {
+            for (int y = 0; y < winningSlots.GetLength(1); y++)
+            {
+                winningSlots[x, y] = null;
+            }
+        }
         spinButton.interactable = false;
         SlotMachineStarted?.Invoke();
         StartCoroutine(SpinDelay());
