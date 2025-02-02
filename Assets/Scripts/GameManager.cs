@@ -8,14 +8,16 @@ using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private List<Sprite> icons;
-    [SerializeField] private Vector2 spinTime;
+    [SerializeField] private float spinDelay = 1f;
+    [SerializeField] private float minSpinTime = 2f;
+    [SerializeField] private float maxSpinTime = 4f;
     [SerializeField] private Button spinButton;
-    private bool _isSpinning = false;
+    [SerializeField] private List<SlotColumn> slots;
     public static GameManager Instance { get; private set; }
 
-    public Action StartSpin;
-    public Action SpinEnded;
+    public Action SlotMachineStarted;
+    public Action SlotMachineStopped;
+    
     public float speed = 5f;
 
     private void Awake()
@@ -30,23 +32,57 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public List<Sprite> GetIcons()
+    private void Start()
     {
-        return icons;
+        foreach (SlotColumn slot in slots)
+        {
+            slot.SpinEnded += SlotColumnStopped;
+        }
     }
-    
+
+    void SlotColumnStopped()
+    {
+        bool allColumnsSpinning = true;
+        foreach (SlotColumn slot in slots)
+        {
+            if (slot.IsSpinning)
+            {
+                allColumnsSpinning = true;
+                break;
+            }
+
+            allColumnsSpinning = false;
+        }
+
+        if (!allColumnsSpinning)
+        {
+            SlotMachineStopped?.Invoke();
+            spinButton.interactable = true;
+        }
+    }
+
     public void OnSpin()
     {
-        StartSpin?.Invoke();
         spinButton.interactable = false;
+        SlotMachineStarted?.Invoke();
         StartCoroutine(SpinDelay());
     }
     
     IEnumerator SpinDelay()
     {
-        float selectedTime = Random.Range(spinTime.x, spinTime.y);
-        yield return new WaitForSeconds(selectedTime);
-        SpinEnded?.Invoke();
-        spinButton.interactable = true;
+        float spinTime = Random.Range(minSpinTime, maxSpinTime);
+        foreach (SlotColumn slot in slots)
+        {
+            slot.Spin(spinTime);
+            yield return new WaitForSeconds(spinDelay);
+        }
+    }
+
+    private void OnDisable()
+    {
+        foreach (SlotColumn slot in slots)
+        {
+            slot.SpinEnded -= SlotColumnStopped;
+        }
     }
 }

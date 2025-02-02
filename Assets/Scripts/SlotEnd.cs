@@ -1,20 +1,14 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class SlotEnd : MonoBehaviour
 {
-    [SerializeField] private GameObject distanceReference;
-    private float _distance = 0f;
-
-    private void Start()
+    private void OnTriggerStay2D(Collider2D other)
     {
-        _distance = Vector2.Distance(distanceReference.transform.position, transform.position);
-    }
-    
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        Vector3 newPos = other.transform.position;
-        newPos.y += _distance;
-        other.transform.localPosition = newPos;
+        SlotColumn slotColumn = other.transform.parent.GetComponent<SlotColumn>();
+        if (!slotColumn.IsSpinning) return;
+        
+        slotColumn.ResetSlotPosition(other.gameObject);
     }
 }
