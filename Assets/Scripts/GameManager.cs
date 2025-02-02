@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<SlotColumn> slots;
     [SerializeField] private ScoreValues scoreValues;
     [SerializeField] private string activateGlowPropertyName;
+    
     public AudioManager audioManager;
     
     private List<SlotsMatched> _slotsMatched;

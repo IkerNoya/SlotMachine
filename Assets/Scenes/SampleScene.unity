@@ -2162,8 +2162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSfx: {fileID: 8300000, guid: ad7ae129ef939ae4ea91394670352869, type: 3}
-  slotSpinSfx: {fileID: 0}
-  slotSpinEnd: {fileID: 0}
+  slotSpinSfx: {fileID: 8300000, guid: 3c0f40392f50c6d4d817e7ef4fa90d3c, type: 3}
+  winSFX: {fileID: 8300000, guid: e2cb5fed7fd0932479473a54116ccdab, type: 3}
 --- !u!4 &1300211190
 Transform:
   m_ObjectHideFlags: 0
